@@ -10,7 +10,7 @@
 nav {
     display: flex;
     justify-content: space-around;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 a {
@@ -21,7 +21,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    padding: 3em 2em 8em 2em;
+    padding: 3em 2em 6em 2em;
 }
 
 .name-container {
@@ -44,8 +44,54 @@ header {
 }
 
 .about-section {
+    width: 50%;
+    margin: auto;
+    padding: 4em 2em 2em 2em;
+}
+
+.projects-section {
+    padding: 2em;
+}
+
+.projects-section > h2 {
     text-align: center;
-    padding: 4em 2em;
+    padding: 2em;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2em;
+}
+
+.project {
+    border: 2px solid black;
+}
+
+.project-thumbnail {
+    display: flex;
+    justify-content: center;
+}
+
+.project-thumbnail > img {
+    height: 200px;
+    width: 200px;
+}
+
+.project-info > p {
+    margin: 1em;
+    overflow: hidden;
+    display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+}
+
+.project-info > h4 {
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1em 0;
 }
 
 @media screen and (min-width: 1080px) {
