@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 3em 2em 8em 2em;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+}
+
+.name-container > h1 {
+    font-size: 7vw;
+    max-width: 100px;
+}
+
+.personal-photo-container {
+    text-align: center;
+}
+
+.personal-photo-container > img {
+    width: 40vw;
+    max-width: 480px;
+}
+
+.about-section {
+    text-align: center;
+    padding: 4em 2em;
+}
+
+@media screen and (min-width: 1080px) {
+    .name {
+        font-size: 100px;
+    }
+}
