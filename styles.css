@@ -23,6 +23,11 @@ nav {
     border-radius: 0 0 10px 10px;
 }
 
+nav > a:hover {
+    transform: scale(110%);
+    transition: transform 0.3s;
+}
+
 a {
     text-decoration: none;
 }
@@ -53,7 +58,7 @@ header {
     max-width: 480px;
 }
 
-.about-section {
+.about {
     width: 40%;
     margin: auto;
     padding: 2em;
@@ -65,11 +70,11 @@ header {
             -40px 40px 0px 0px rgba(33, 33, 33, 0.1);
 }
 
-.projects-section {
+.projects {
     padding: 2em;
 }
 
-.projects-section > h2 {
+.projects > h2 {
     text-align: center;
     padding: 2em;
 }
@@ -95,8 +100,23 @@ header {
     width: 200px;
 }
 
+#project-icon {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+#project-icon:hover {
+    transform: scale(110%);
+    transition: transform 0.3s;
+}
+
+.project-info > div {
+    text-align: end;
+    padding: 0.5em 1em;
+}
+
 .project-info > p {
-    margin: 1em;
+    margin: 0 1em 1em 1em;
     overflow: hidden;
     display: -webkit-box;
         -webkit-line-clamp: 3;
@@ -110,23 +130,44 @@ header {
     padding: 1em 0;
 }
 
-.contact-section {
-    width: 30%;
+.contact {
+    width: 50%;
     margin: auto;
     padding: 4em 2em 2em 2em;
 }
 
-.contact-section > h2 {
-    text-align: start;
-}
-
 .contact-info-container {
     border: 1px solid black;
-    padding: 2em;
+    padding: 1em;
+}
+
+.contact-info-container > h2 {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact-icon {
+    height: 4vw;
+    width: 4vw;
+}
+
+#contact-icon:hover {
+    transform: scale(110%);
+    transition: transform 0.3s;
 }
 
 @media screen and (min-width: 1080px) {
     .name {
         font-size: 100px;
+    }
+
+    #contact-icon {
+        height: 50px;
+        width: 50px;
     }
 }

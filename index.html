@@ -12,11 +12,11 @@
 </head>
 <body>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <header>
+    <header id="home">
         <div class="name-container">
             <h1>Adam Goldberg</h1>
         </div>
@@ -24,7 +24,7 @@
             <img src="/images/me.jpeg" alt="person">
         </div>
     </header>
-    <section class="about-section">
+    <section class="about" id="about">
         <h2>About</h2>
         <br>
         <div>
@@ -36,7 +36,7 @@
             <p>Check out some of my projects, and let's connect!</p>
         </div>
     </section>
-    <section class="projects-section">
+    <section class="projects">
         <h2>Projects</h2>
         <div class="projects-container">
             <div class="project">
@@ -45,6 +45,10 @@
                 </div>
                 <div class="project-info">
                     <h4>Project Title</h4>
+                    <div>
+                        <a href="github.com/agold95"><img id="project-icon"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure consequatur dolorum esse culpa, eligendi fugiat maxime atque, consequuntur necessitatibus nam nostrum, ut totam officiis est debitis earum non distinctio.</p>
                 </div>
             </div>
@@ -54,6 +58,10 @@
                 </div>
                 <div class="project-info">
                     <h4>Project Title</h4>
+                    <div>
+                        <a href="github.com/agold95"><img id="project-icon"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a>
+                    </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, soluta. Quos tempore facilis accusamus dolorum voluptatem minima quaerat illo omnis eaque eum, earum assumenda saepe, itaque provident ut atque dolorem.</p>
                 </div>
             </div>
@@ -63,27 +71,31 @@
                 </div>
                 <div class="project-info">
                     <h4>Project Title</h4>
+                    <div>
+                        <a href="github.com/agold95"><img id="project-icon"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusamus eos dolores nostrum earum esse pariatur necessitatibus quam! Quis quasi neque est commodi minus exercitationem tenetur ad nisi consectetur quam?</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact-section">
+    <section class="contact" id="contact">
         <div class="contact-info-container">
             <h2>Contact</h2>
-            <br>
-            <h5>Adam Goldberg</h5>
-            <br>
-            <div class="contac-icons">
-                <p><a href="mailto:adam.goldberg95@yahoo.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <title>email</title>
-                            <path
-                                d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
-                        </svg></a></p>
-                <p><a href="linkedin.com/in/adam-goldberg95"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" /></a></p>
-                <p><a href="github.com/agold95"><img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a></p>
+            <div class="contact-icons">
+                <div>
+                    <a href="mailto:adam.goldberg95@yahoo.com"><svg id="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>Email</title>
+                                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                            </svg></a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/adam-goldberg95" target="_blank"><img id="contact-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="Linkedin" title="Linkedin" /></a>
+                </div>
+                <div>
+                    <a href="https://www.github.com/agold95" target="_blank"><img id="contact-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github" title="Github" /></a>
+                </div>
             </div>
         </div>
     </section>
