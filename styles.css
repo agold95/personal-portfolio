@@ -161,6 +161,20 @@ header {
     transition: transform 0.3s;
 }
 
+footer {
+    font-size: 10px;
+    background-color: #b9b9b9d5;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > a {
+    padding: 0 5px;
+    width: 1.6rem;
+}
+
 @media screen and (min-width: 1080px) {
     .name {
         font-size: 100px;
