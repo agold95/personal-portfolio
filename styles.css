@@ -16,7 +16,7 @@ nav {
     justify-content: space-around;
     padding: 1em;
     background-color: #b9b9b9;
-    box-shadow: rgba(0, 0, 0, 0.363) 0px 5px 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.493) 0px 5px 15px 0px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -38,7 +38,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     padding: 6em 2em 0 2em;
-    animation: fadeIn ease 4s;
+    animation: fadeIn ease 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -63,7 +63,7 @@ header {
 }
 
 .about {
-    padding-top: 10em;
+    padding-top: 15em;
 }
 
 .about-container {
@@ -79,7 +79,7 @@ header {
 }
 
 .projects {
-    padding: 8em 4em;
+    padding: 15em 4em;
 }
 
 .projects > h2 {
@@ -189,6 +189,18 @@ footer {
 footer > a {
     padding: 0 5px;
     width: 1.6rem;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 @keyframes fadeIn {

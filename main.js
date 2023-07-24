@@ -1,16 +1,13 @@
-$(window).on("load",function() {
-  $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".fade").each(function() {
-      /* Check the location of each desired element */
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-      
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-      } else { //object goes out of view (scrolling up)
-        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-      }
-    });
-  }).scroll(); //invoke scroll-handler on page-load
-});
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
