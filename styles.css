@@ -145,6 +145,11 @@ header {
     padding: 1em 0;
 }
 
+#link {
+    text-decoration: dashed;
+    color: blue;
+}
+
 .contact {
     width: 50%;
     margin: auto;
