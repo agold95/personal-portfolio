@@ -113,6 +113,7 @@ header {
 .project {
     border: 2px solid var(--color-gray);
     background-color: var(--color-gray);
+    border-radius: 5px;
 }
 
 .project:hover {
